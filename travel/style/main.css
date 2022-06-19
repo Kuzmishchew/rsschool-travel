@@ -22,7 +22,6 @@ a {
     box-sizing: content-box;
     margin: 0 auto;
     padding: 0;
-    border: 1px solid black;
 }
 .button {
     background-color: #0D606F;
@@ -37,6 +36,8 @@ a {
 Разбил на несколько блоков, стили которых отделил отступами. 
 */
 .header {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,8 +79,6 @@ a {
     font-family: 'Red Hat Text', sans-serif;
     font-size: 16px;
     font-weight: 500;
-
-    border: 1px solid black;
 }
 .header__nav-item {
     margin: 0 21px;
@@ -104,5 +103,78 @@ a {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.main {
+    display: flex;
+    margin-top: -90px;
+    /*
+    Прячемься под шапку
+    */
+}
 
+/* 
+Превью блок.
+Разбил на несколько блоков, стили которых отделил отступами. 
+*/
+.preview {
+    height: 765px; 
+    padding: 120px;
+    box-sizing: border-box;
+    background: url(../img/preview/background.jpg);
+    color: #FFFFFF;
+}
+.preview__heading {
+    margin: 0;
 
+    font-family: 'Aleo', serif;
+    font-size: 80px;
+    font-weight: 700;
+}
+.preview__text {
+    margin: 30px 0 46px;
+
+    font-family: 'Aleo', serif;
+    font-style: italic;
+    font-size: 20px; 
+    font-weight: 500;
+}
+
+.preview__planning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 892px;
+    height: 95px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+}
+
+.preview__planning-text {
+    width: 560px;
+    margin-left: 41px;
+
+    background: none;
+    border: none;
+
+    font-family: 'Aleo', serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+
+    color: #F2785C;
+}
+.preview__planning-text::placeholder {
+    color: #F2785C;
+}
+.preview__planning-text:focus {
+    outline: none;
+}
+.preview__button {
+    width: 228px;
+    height: 59px;
+    margin-right: 18px;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(13, 96, 111, 0.16);
+
+    font-size: 24px;
+}
