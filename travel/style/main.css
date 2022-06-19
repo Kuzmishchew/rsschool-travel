@@ -19,14 +19,17 @@ a {
 .wrapper {
     width: 1440px;
     
+    box-sizing: content-box;
     margin: 0 auto;
+    padding: 0;
+    border: 1px solid black;
 }
 .button {
- background-color: #0D606F;
- color: #FFFFFF;
- border: none;
- font-family: 'Red Hat Text', sans-serif;
- font-weight: 500;
+    background-color: #0D606F;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
 }
 
 /* 
@@ -37,6 +40,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     height: 90px;
     padding: 0 120px;
 
@@ -49,7 +53,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 216px;
 }
 .header__logo-image {
     width: 30px;
@@ -68,16 +71,28 @@ a {
 .header__nav-list {
     display: flex;
     justify-content: space-between;
+    /* margin: 0 -21px; */
     padding: 0;
-   
 
     list-style-type: none;
     font-family: 'Red Hat Text', sans-serif;
     font-size: 16px;
     font-weight: 500;
+
+    border: 1px solid black;
 }
 .header__nav-item {
     margin: 0 21px;
+}
+.header__nav-item_first {
+    margin-left: 0;
+}
+.header__nav-item_last {
+    margin-right: 40px;
+    /*
+    служит для корректного размещения навигации между лого и кнокпой
+    в макете расстояние разнится, а выравнивание флексом делает расстояние одниковым
+    */
 }
 
 .header__button {
