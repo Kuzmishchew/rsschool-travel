@@ -1,0 +1,93 @@
+
+/* 
+Сброс значений, которые могут встречаться во всем документе.
+Использую вместо normalize. 
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 
+Здесь хранятся стили которые используются в верстке более одного раза.
+Обертка, кнопка ...
+*/
+.wrapper {
+    width: 1440px;
+    
+    margin: 0 auto;
+}
+.button {
+ background-color: #0D606F;
+ color: #FFFFFF;
+ border: none;
+ font-family: 'Red Hat Text', sans-serif;
+ font-weight: 500;
+}
+
+/* 
+Шапка сайта.
+Разбил на несколько блоков, стили которых отделил отступами. 
+*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 120px;
+
+    background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
+    color: #FFFFFF;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 216px;
+}
+.header__logo-image {
+    width: 30px;
+    height: 30px;
+}
+.header__logo-name {
+    font-family: 'Magra', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+.header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+   
+
+    list-style-type: none;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.header__nav-item {
+    margin: 0 21px;
+}
+
+.header__button {
+    width: 103px;
+    height: 41px;
+
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
