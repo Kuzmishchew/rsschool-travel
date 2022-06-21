@@ -30,19 +30,32 @@ a {
     font-family: 'Red Hat Text', sans-serif;
     font-weight: 500;
 }
-
+.heading {
+    margin: 0;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #F2785C;
+}
 /* 
 Шапка сайта.
 Разбил на несколько блоков, стили которых отделил отступами. 
 */
 .header {
+    width: 100%;
+
+    background-color: rgba(242, 120, 92, 0.7);
+}
+.header__wrapper {
     position: relative;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    width: 1440px;
     height: 90px;
+    margin: 0 auto;
     padding: 0 120px;
 
     background-color: rgba(242, 120, 92, 0.7);
@@ -51,22 +64,27 @@ a {
 }
 
 .header__logo {
+    box-sizing: border-box;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 210px;
-    height: 90px;
-
-    
+    height: 90px;  
 }
 .header__logo-image {
     width: 30px;
     height: 30px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 7px;
 }
 .header__logo-name {
     font-family: 'Magra', sans-serif;
     font-size: 32px;
     font-weight: 700;
+    padding: 0;
+    padding-right: 2px;
 }
 
 .header__nav {
@@ -78,6 +96,7 @@ a {
     justify-content: space-between;
     /* margin: 0 -21px; */
     padding: 0;
+    padding-left: 8px;
 
     list-style-type: none;
     font-family: 'Red Hat Text', sans-serif;
@@ -109,6 +128,7 @@ a {
 
 .main {
     display: flex;
+    flex-direction: column;
     margin-top: -90px;
     /*
     Прячемься под шапку
@@ -126,8 +146,10 @@ a {
     background: url(../img/preview/background.jpg);
     color: #FFFFFF;
 }
+
 .preview__heading {
     margin: 0;
+    margin-top: 2px;
 
     font-family: 'Aleo', serif;
     font-size: 80px;
@@ -151,10 +173,9 @@ a {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
 }
-
 .preview__planning-text {
     width: 560px;
-    margin-left: 41px;
+    margin-left: 39px;
 
     background: none;
     border: none;
@@ -181,4 +202,44 @@ a {
     box-shadow: 0 2px 3px rgba(13, 96, 111, 0.16);
 
     font-size: 24px;
+}
+
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+.steps__heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.step {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+
+    font-family: 'Aleo', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #0D606F;
+}
+/* 
+Стили, которые выравнивают блоки с шагами.
+В макете они рассположены не симметрично. 
+*/
+.first-step {
+    padding-left: 27px;
+}
+.last-step {
+    padding-right: 100px;
+}
+.step__description {
+    margin-top: 30px;
 }

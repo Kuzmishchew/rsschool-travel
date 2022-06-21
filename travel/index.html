@@ -10,20 +10,22 @@
 </head>
 <body>
     
-    <header class="wrapper header">
-        <div class="header__logo">
-            <img class="header__logo-image" src="./img/header/header-logo-30x30.svg" alt="Logo">
-            <p class="header__logo-name">Travel Portal</p>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img class="header__logo-image" src="./img/header/header-logo-30x30.svg" alt="Logo">
+                <p class="header__logo-name">Travel Portal</p>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item header__nav-item_first"><a href="#">How It Works</a></li>
+                    <li class="header__nav-item"><a href="#">Plan Your Trip</a></li>
+                    <li class="header__nav-item"><a href="#">Destinations</a></li>
+                    <li class="header__nav-item header__nav-item_last"><a href="#">Travel Stories</a></li>
+                </ul>
+            </nav>
+            <button class="header__button button">Login</button>
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item header__nav-item_first"><a href="#">How It Works</a></li>
-                <li class="header__nav-item"><a href="#">Plan Your Trip</a></li>
-                <li class="header__nav-item"><a href="#">Destinations</a></li>
-                <li class="header__nav-item header__nav-item_last"><a href="#">Travel Stories</a></li>
-            </ul>
-        </nav>
-        <button class="header__button button">Login</button>
     </header>
 
     <main class="main">
@@ -34,6 +36,25 @@
                 <input type="text" class="preview__planning-text" placeholder="What would you like to do?" maxlength="38">
                 <button class="preview__button button">Start Planning</button>
            </div>
+        </section>
+
+        <section class="wrapper steps">
+            <h2 class="heading steps__heading">3 STEPS TO THE PERFECT TRIP</h2>
+
+            <div class="step first-step">
+                <img class="step__img" src="./img/steps/first-step.svg" alt="First step">
+                <p class="step__description">Tell us what you want to do</p>
+            </div>
+
+            <div class="step">
+                <img class="step__img" src="./img/steps/second-step.svg" alt="Second step">
+                <p class="step__description">Share us preferable dates </p>
+            </div>
+
+            <div class="step last-step">
+                <img class="step__img" src="./img/steps/third-step.svg" alt="Third step">
+                <p class="step__description">We will give you recommendations</p>
+            </div>
         </section>
     </main>
 
