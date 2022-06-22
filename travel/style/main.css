@@ -3,6 +3,9 @@
 Сброс значений, которые могут встречаться во всем документе.
 Использую вместо normalize. 
 */
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
