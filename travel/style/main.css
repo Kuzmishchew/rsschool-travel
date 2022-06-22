@@ -40,6 +40,12 @@ a {
     border: none;
     font-family: 'Red Hat Text', sans-serif;
     font-weight: 500;
+
+    transition: background-color 0.5s;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: #14A3BD; 
 }
 .destinations__button {
     box-sizing: border-box;
@@ -441,7 +447,7 @@ a {
     padding-top: 5px;
 }
 .footer__rights {
-    margin-right: 308px; 
+    margin-right: 145px; 
 
     font-family: 'Red Hat Text', sans-serif;
     font-size: 16px;
