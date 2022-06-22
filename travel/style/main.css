@@ -14,7 +14,7 @@ a {
 
 /* 
 Здесь хранятся стили которые используются в верстке более одного раза.
-Обертка, кнопка ...
+Обертка, кнопка, заголовки.
 */
 .wrapper {
     width: 1440px;
@@ -23,7 +23,13 @@ a {
     margin: 0 auto;
     padding: 0;
 }
-
+.heading {
+    margin: 0;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: #F2785C;
+}
 /* Стилизую кнопки для стрелок в них. */
 .button {
     background-color: #0D606F;
@@ -61,13 +67,6 @@ a {
     background-position: 33px 17px;
 }
 
-.heading {
-    margin: 0;
-    font-family: 'Red Hat Text', sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-    color: #F2785C;
-}
 /* 
 Шапка сайта.
 Разбил на несколько блоков, стили которых отделил отступами. 
@@ -157,6 +156,7 @@ a {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+
 .main {
     display: flex;
     flex-direction: column;
@@ -165,7 +165,6 @@ a {
     Прячемься под шапку
     */
 }
-
 /* 
 Превью блок.
 Разбил на несколько блоков, стили которых отделил отступами. 
@@ -236,6 +235,9 @@ a {
 }
 
 
+/* 
+Шаги.
+*/
 .steps {
     display: flex;
     flex-wrap: wrap;
@@ -275,6 +277,8 @@ a {
     margin-top: 30px;
 }
 
+
+
 .destinations{
     display: flex;
     flex-direction: column;
@@ -286,15 +290,66 @@ a {
     width: 100%;
     text-align: center;
 }
-
-.destinations__slides {
+/* 
+Всё в слайдере сейчас выполнено для вида, функциональность буду добавлять позже. 
+*/
+.destinations__slider {
     width: 100%;
     height: 850px;
-    margin: 46px 0 31px;
-    border: 1px solid black;
+    margin: 46px 0 33px;
+
+    overflow: hidden;
 }
+.slides-wrapper {
+    width: 2520px;
+    display: flex;
+    justify-content: space-between;
+      
+    margin-left: -540px;
+}
+.slides-item {
+    box-sizing: border-box;
+    width: 800px;
+    height: 800px;
+}
+.slides-item__img {
+    width: 800px;
+    height: 800px;
 
+    border-radius: 16px;
+}
+.slides-item__country {
+    margin-top: -88px;
+    margin-left: 16px;
 
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.radio-block{
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+
+    margin: 24px auto 0;
+
+}
+.slide-checker {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(242, 120, 92, 0.7);
+}
+.slide-checker:hover{
+    cursor: pointer;
+    background-color: rgba(242, 120, 92);
+}
+/* 
+Блок с историями. 
+Дал фон основному блоку, сдвинул фон на соответсвующую позицию.
+Заблюренный белый фон в самом блоке с текстом и картинками.
+*/
 .stories{
     height: 1424px;
     margin-top: 80px;
@@ -361,6 +416,10 @@ a {
     font-weight: 700;
 }
 
+/* 
+Подвал.
+Поднял вверх обратным margin. Пока должно работать.
+*/
 .footer {
     box-sizing: border-box;
     height: 61px;
