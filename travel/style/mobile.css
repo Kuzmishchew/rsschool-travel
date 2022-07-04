@@ -6,33 +6,93 @@
     .header {
         background-color: transparent;
     }
-    .header__wrapper {
-        width: 390px;
-        flex-direction: column;
-
-        background-color: transparent;
-        box-shadow: none;
-    }
+    /*
+    Прячем элементы, которых нет в мобильном макете.
+    */
     .header__nav {
         display: none;
     }
     .header__logo-name {
         display: none;
     }
-
-    .preview {
-        width: 390px;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
+    .header__button {
+        display: none;
     }
+    /*
+    Добавляем фон, устанавливаем размеры.
+    */
+    .header__wrapper {
+        width: 390px;
+        height: 251px;
+        padding: 0;
+        padding-top: 43px;
+        align-items: flex-start; 
+       
+        background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
+        box-shadow: none;
+    }
+    .header__logo {
+        width: 390px;
+        height: 32px;
+        padding: 0 16px;
+
+    }
+    .header__logo-image {
+        padding: 0;
+    }    
+    .header-menu-mb {
+        display: block;
+
+        margin-right: 3px;
+    }
+
+    
+    /*
+    Поднимаем верстку на высоту шапки.
+    */
+    .main {
+        margin-top: -251px;
+    }
+
     .preview__heading {
         display: none;
     }
     .preview__text {
         display: none;
     }
+    .preview {
+        width: 390px;
+        height: 251px;
+        
+        background-color: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
+        background-image: url(../img/preview/background-mb.jpg);        
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }    
+    .preview__planning {
+        width: 360px;
+        height: 48px;
 
+        margin: 142px auto 61px;
+    }
+    .preview__planning-text {
+        width: 226px;
+        height: 48px;
+        margin-left: 15px;
+
+        font-size: 14px;
+    }
+    .preview__button {
+        width: 92px;
+        height: 30px;
+        margin-right: 8px;
+
+        font-size: 11px; 
+    }
+
+
+    
 
     .steps {
         width: 390px;

@@ -118,6 +118,9 @@ a {
     padding: 0;
     padding-bottom: 7px;
 }
+.header-menu-mb {
+    display: none;
+}
 .header__logo-name {
     font-family: 'Magra', sans-serif;
     font-size: 32px;
