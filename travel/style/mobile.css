@@ -1,0 +1,61 @@
+@media screen and (max-width: 390px) {
+    .wrapper {
+        width: 390px;
+    }
+
+    .header {
+        background-color: transparent;
+    }
+    .header__wrapper {
+        width: 390px;
+        flex-direction: column;
+
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__logo-name {
+        display: none;
+    }
+
+    .preview {
+        width: 390px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .preview__heading {
+        display: none;
+    }
+    .preview__text {
+        display: none;
+    }
+
+
+    .steps {
+        width: 390px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .destinations {
+        width: 390px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .stories {
+        width: 390px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .footer {
+        width: 390px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+}
