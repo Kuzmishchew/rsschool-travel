@@ -198,7 +198,7 @@
 
     .stories {
         width: 390px;
-        height: 693px;
+        height: 722px;
         overflow: hidden;
         margin: 20px 0 0;
         padding: 0;
@@ -216,7 +216,7 @@
         flex-direction: column;
         align-items: center;
 
-        height: 657px;
+        height: 628px;
         width: 390px;
         padding: 10px 15px;
         margin-top: 10px;
@@ -251,10 +251,26 @@
         font-weight: 500;
         margin-top: -5px;
     }
+
     .footer {
         width: 390px;
+        height: 65px;
         overflow: hidden;
-        margin: 0;
+        margin: -65px 0 0;
         padding: 0;
+    }
+    .footer__rights {
+        display: none;
+    }
+    .footer__wrapper{
+        justify-content: center;
+    }
+    .social-list  {
+        width: 360px;
+        height: 34px;
+        margin: 0 auto;
+    }
+    .social-list__item {
+        height: 34px;
     }
 }
