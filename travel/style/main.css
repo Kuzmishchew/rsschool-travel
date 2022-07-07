@@ -312,6 +312,9 @@ a {
 
     overflow: hidden;
 }
+.destination__slider_mb {
+    display: none;
+}
 .slides-wrapper {
     width: 2520px;
     display: flex;

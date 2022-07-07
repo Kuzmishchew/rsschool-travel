@@ -141,14 +141,68 @@
         width: 390px;
         overflow: hidden;
         margin: 0;
+        margin-top: 10px;
         padding: 0;
+        
     }
+    .destinations__slider {
+        display: none;
+    }
+    .destination__slider_mb {
+        display: block;
+        width: 360px;
+        height: 210px;
+        margin-top: 20px;
+
+        background-image: url("../img/destinations/spain-mb.jpg");
+        border-radius: 16px;
+
+        font-family: 'Red Hat Text', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: #FFFFFF;        
+    }
+    .slider-mb__name {
+       margin-top: 8px;
+       margin-left: 15px; 
+    }
+    .slider-mb__arrows {
+        display: flex;
+        justify-content: space-between;
+        margin: 56px 12px 0;
+    }
+    .radio-block {
+        width: 36px;
+    }
+    .slide-checker {
+        width: 8px;
+        height: 8px;
+        margin-top: 53px;
+
+        border-radius: 4px;
+    }
+    .destinations__button {
+        width: 92px;
+        height: 30px;
+        margin-top: 10px;
+
+        padding: 0;
+        padding-left: 18px;
+
+        background-image: url("../img/destinations/button-arrow-mb.svg");
+        background-position: 10px 12px;
+        font-size: 11px;
+        line-height: 30px;
+    }
+
     .stories {
         width: 390px;
         overflow: hidden;
         margin: 0;
         padding: 0;
     }
+
+    
     .footer {
         width: 390px;
         overflow: hidden;
