@@ -1,0 +1,100 @@
+@media screen and (max-width: 1439px) {
+    .wrapper {
+        width: 100%;
+    }
+    .header__wrapper {
+        width: 100%;
+        padding: 0 50px;
+    }
+    .header__logo {
+        width: 20%;
+    }
+    .header__logo-name {
+        font-size: 24px;
+    }
+    .preview {
+        padding: 120px 50px;
+    }
+
+    .preview__planning {
+        width: 90%;
+    }
+    .preview__planning-text {
+        width: 70%;
+        font-size: 18px;
+    }
+    .preview__button {
+        width: 23%; 
+        font-size: 18px;
+    }
+    .destinations__slider {
+        box-sizing: border-box;
+    }
+    .slides-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        box-sizing: border-box;
+    }    
+    .first-slide,
+    .third-slide {
+        display: none;
+    }
+    .stories__content {
+        padding: 42px 0;
+    }
+    .stories-item {
+        width: 90%;
+        height: 20%;
+    }
+    .stories-item__img {
+        width: 300px;
+        height: 187.5px;
+    }
+    .stories-item__heading{
+        font-size: 24px;
+    }
+    .stories-item__text {
+        width: 63%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .footer__wrapper {
+        padding: 0;
+        justify-content: center;
+    }
+    .footer__rights {
+        margin-right: 0px; 
+    
+        font-family: 'Red Hat Text', sans-serif;
+        font-size: 9px;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+    @media screen and (max-width: 989px) and (min-width: 391px) {
+        .header__nav-list {
+            font-size: 12px;
+        } 
+        .header__nav-item {
+            margin: 0 11px;
+        }
+
+
+        .stories-item__img {
+            width: 250px;
+            height: 156.25px;
+
+            margin-bottom: 35px;
+        }
+        .stories-item__heading{
+            font-size: 22px;
+        }
+        .stories-item__text {
+            width: 63%;
+            height: 70%;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
