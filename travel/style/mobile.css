@@ -1,15 +1,6 @@
-@media screen and (max-width: 390px) {
-    .wrapper {
-        width: 390px;
-    }
-    .heading {
-        font-size: 14px;
-    }
-    .header {
-        background-color: transparent;
-    }
+@media screen and (max-width: 390px)  {
     /*
-    Прячем элементы, которых нет в мобильном макете.
+    Элементы, которые скрываются в мобильной вёрстке.
     */
     .header__nav {
         display: none;
@@ -20,62 +11,85 @@
     .header__button {
         display: none;
     }
-    /*
-    Добавляем фон, устанавливаем размеры.
-    */
-    .header__wrapper {
-        width: 390px;
-        height: 251px;
-        padding: 0;
-        padding-top: 43px;
-        align-items: flex-start; 
-       
-        background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
-        box-shadow: none;
-    }
-    .header__logo {
-        width: 390px;
-        height: 32px;
-        padding: 0 16px;
-
-    }
-    .header__logo-image {
-        padding: 0;
-    }    
-    .header-menu-mb {
-        display: block;
-
-        margin-right: 3px;
-    }
-
-    
-    /*
-    Поднимаем верстку на высоту шапки.
-    */
-    .main {
-        margin-top: -251px;
-    }
-
     .preview__heading {
         display: none;
     }
     .preview__text {
         display: none;
     }
-    .preview {
-        width: 390px;
+    .destinations__slider {
+        display: none;
+    }
+    .stories__content {
+        display: none;
+    }
+    .footer__rights {
+        display: none;
+    }
+
+
+    /*
+    Элементы, которые применяются во всём макете.
+    */
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .heading {
+        font-size: 14px;
+    }
+
+    .header {
+        background-color: transparent;
+    }
+    /*
+    Добавляем полупрозрачный фон, устанавливаем размеры, для наложения на preview.
+    */
+    .header__wrapper {
+        width: 100%;
         height: 251px;
-        
-        background-color: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
-        background-image: url(../img/preview/background-mb.jpg);        
-        overflow: hidden;
+        padding: 43px 0 0;
+        align-items: flex-start; 
+       
+        background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
+        box-shadow: none;
+    }
+    .header__logo {
+        width: 100%;
+        height: 32px;
+        padding: 0 16px;
+    }
+    .header__logo-image {
+        padding: 0;
+    }    
+    .header-menu-mb {
+        display: block;
+        margin-right: 3px;
+    }
+
+
+    
+    /*
+    В main отрицательный margin потому что мы, поднимаем верстку на высоту шапки.
+    */
+    .main {
+        width: 100%;
+        margin: -251px auto 0;
+    }
+
+    
+   
+    .preview {
+        width: 100%;
+        height: 251px;
         margin: 0;
         padding: 0;
+        
+        background-image: url(../img/preview/background-mb.jpg);        
     }    
     .preview__planning {
         width: 360px;
         height: 48px;
-
         margin: 142px auto 61px;
     }
     .preview__planning-text {
@@ -94,16 +108,13 @@
     }
 
 
-    
 
     .steps {
         width: 100%;
-        overflow: hidden;
-        margin: 0;
-        margin-top: 20px;
+        margin: 20px 0 0;        
         padding: 0;
-        align-items: baseline;
         justify-content: space-between;
+        align-items: baseline;        
     }
     .steps__heading {
         margin-bottom: 22px;
@@ -124,30 +135,27 @@
         padding: 0;
     }
     .first-step {
-        align-items: flex-start;
         width: 94px;
-        text-align: left;
         margin-left: 15px;
+        align-items: flex-start;
+
+        text-align: left;
     }
     .last-step {
-        align-items: flex-end;
         width: 98px;
-        text-align: right;
         margin-right: 15px;
+        align-items: flex-end;
+
+        text-align: right;
     }
 
 
+  
     .destinations {
-        width: 390px;
-        overflow: hidden;
-        margin: 0;
-        margin-top: 10px;
-        padding: 0;
-        
-    }
-    .destinations__slider {
-        display: none;
-    }
+        width: 100%;
+        margin: 10px 0 0;
+        padding: 0;        
+    }    
     .destination__slider_mb {
         display: block;
         width: 360px;
@@ -163,8 +171,7 @@
         color: #FFFFFF;        
     }
     .slider-mb__name {
-       margin-top: 8px;
-       margin-left: 15px; 
+       margin: 8px 0 0 15px;
     }
     .slider-mb__arrows {
         display: flex;
@@ -186,40 +193,35 @@
         width: 92px;
         height: 30px;
         margin-top: 10px;
+        padding: 0 0 0 18px;
 
-        padding: 0;
-        padding-left: 18px;
-
-        background-image: url("../img/destinations/button-arrow-mb.svg");
-        background-position: 10px 12px;
         font-size: 11px;
         line-height: 30px;
+
+        background-image: url("../img/destinations/button-arrow-mb.svg");
+        background-position: 10px 12px;        
     }
 
     .stories {
-        width: 390px;
+        width: 100%;
         height: 722px;
-        overflow: hidden;
         margin: 20px 0 0;
         padding: 0;
 
-        background: url(../img/stories/background-mb.jpg);
+        background-image: url("../img/stories/background-mb.jpg");
         background-position: 0 29px;
         background-repeat: no-repeat;
     }
-    .stories__content {
-        display: none;
-    }
+    
     .stories__content_mb {
-        box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        align-items: center;
-
-        height: 628px;
-        width: 390px;
-        padding: 10px 15px;
-        margin-top: 10px;
+        align-items: center;        
+        box-sizing: border-box;
+        width: 100%;
+        height: 628px;   
+        margin-top: 10px;     
+        padding: 10px 15px;        
 
         background-color: rgba(255, 255, 255, 0.7);
     }
@@ -253,15 +255,11 @@
     }
 
     .footer {
-        width: 390px;
+        width: 100%;
         height: 65px;
-        overflow: hidden;
-        margin: -65px 0 0;
+        margin: -65px auto 0;
         padding: 0;
-    }
-    .footer__rights {
-        display: none;
-    }
+    }    
     .footer__wrapper{
         justify-content: center;
     }
@@ -269,8 +267,5 @@
         width: 360px;
         height: 34px;
         margin: 0 auto;
-    }
-    .social-list__item {
-        height: 34px;
     }
 }
