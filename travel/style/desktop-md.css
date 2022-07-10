@@ -27,6 +27,15 @@
         width: 23%; 
         font-size: 18px;
     }
+    
+    .steps {
+        align-items: baseline;
+    }
+    .first-step,
+    .last-step {
+        text-align: center;
+    }
+
     .destinations__slider {
         box-sizing: border-box;
     }
@@ -72,7 +81,7 @@
         font-weight: 500;
         color: #FFFFFF;
     }
-    @media screen and (max-width: 989px) and (min-width: 391px) {
+    @media screen and (max-width: 989px) and (min-width: 725px) {
         .header__nav-list {
             font-size: 12px;
         } 
@@ -80,7 +89,31 @@
             margin: 0 11px;
         }
 
+        .preview__heading {
+            font-size: 60px;
+        }
 
+        .step {
+            font-size: 16px;
+        }
+
+        .destinations__slider {
+            height: 650px;
+            margin: 46px 0 33px;
+        
+            overflow: hidden;
+        }
+        .slides-item {
+            box-sizing: border-box;
+            width: 600px;
+            height: 600px;
+        }
+        .slides-item__img {
+            width: 600px;
+            height: 600px;
+        
+            border-radius: 16px;
+        }
         .stories-item__img {
             width: 250px;
             height: 156.25px;

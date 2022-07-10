@@ -1,4 +1,4 @@
-@media screen and (max-width: 390px)  {
+@media screen and (max-width: 724px)  {
     /*
     Элементы, которые скрываются в мобильной вёрстке.
     */
@@ -85,7 +85,9 @@
         margin: 0;
         padding: 0;
         
-        background-image: url(../img/preview/background-mb.jpg);        
+        background-image: url(../img/preview/background-mb.jpg);  
+        background-repeat: no-repeat;
+        background-size: cover;      
     }    
     .preview__planning {
         width: 360px;
@@ -211,6 +213,7 @@
         background-image: url("../img/stories/background-mb.jpg");
         background-position: 0 29px;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .stories__content_mb {
