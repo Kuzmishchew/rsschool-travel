@@ -147,3 +147,36 @@
     font-weight: 700;
     color: #0D606F;
 }
+
+@media screen and (max-width: 724px)  {
+    .popup {
+        left: calc(15%);
+        width: 70%;
+        height: 90%;
+    }
+    .popup__button {
+        width: 70%;
+    }
+    .popup-line {
+        width: 70%;
+    }
+    .or-line {
+        width: 45%;
+    }
+    .popup__form {
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 5px;
+    }
+    .popup__login,
+    .popup__password {
+        width: 70%;
+    }
+    @media screen and (max-width: 600px) {
+        .popup__button {
+            font-size: 14px;
+            font-weight: 500;
+        } 
+    }
+}
