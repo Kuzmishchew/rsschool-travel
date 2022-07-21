@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="exit-carpet" id="exit-carpet"></div>
-    <div class="popup">
+    <div class="popup" id="popup">
         <h3 class="popup__heading">Log in to your account</h3>
         <button class="facebook-sign popup__button"><img class="button-ico" src="./img/popup/fb.svg"><span>Sign In with Facebook</span></button>
         <button class="google-sign popup__button"><img class="button-ico" src="./img/popup/google.svg"><span>Sign In with Google</span></button>
@@ -26,14 +26,14 @@
             <hr class="or-line">
         </div>
         <form action="#" class="popup__form">
-            E-mail<br>
+            <span>E-mail</span>
             <input class="popup__login" type="text">
-            Password<br>
+            <span>Password</span>
             <input class="popup__password" type="password">
-            <input class="popup__sign popup__button" type="submit" value="Sign In">
-            <a href="#">Forgot Your Password?</a>
+            <button class="sign-in__button popup__button">Sign In</button>
+            <a class="pass-reload" href="#">Forgot Your Password?</a>
         </form>
-        <span>Don't have an accout?<a class="Register" href="#">Register</a></span>
+        <span class="registration">Don't have an accout? <a class="registration__link" href="#">Register</a></span>
     </div>
     <div class="burger-menu" id="burger-menu">
         <div class="burger-menu__exit" id="burger-menu__exit"></div>
@@ -64,7 +64,7 @@
                     <li class="header__nav-item header__nav-item_last"><a href="#stories">Travel Stories</a></li>
                 </ul>
             </nav>
-            <button class="header__button button">Login</button>
+            <button class="header__button button" id="login">Login</button>
         </div>
     </header>
 

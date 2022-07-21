@@ -18,6 +18,9 @@ const burgerMenuExit = document.getElementById("burger-menu__exit");
 const menuLink = document.getElementsByClassName("burger-menu__nav-item");
 const exitCarpet = document.getElementById("exit-carpet");
 
+const popUp = document.getElementById("popup");
+const login = document.getElementById("login");
+
 function showBurgerMenu() {    
     burgerMenu.style.right = "-10px";
     exitCarpet.style.display = "block";
@@ -26,12 +29,25 @@ function hideBurgerMenu() {
     burgerMenu.style.right = "-175px";
     exitCarpet.style.display = "none";
 }
+function showPopUp() {
+    popUp.style.top = "5%";
+    exitCarpet.style.display = "block";
+    exitCarpet.style.background = "rgba(0, 0, 0, 0.5)";
+}
+function hidePopUp() {
+    popUp.style.top = "-670px";
+    exitCarpet.style.display = "none";
+    exitCarpet.style.background = "none";
+}
 
 
 burgerButton.addEventListener('click', showBurgerMenu);
 burgerMenuExit.addEventListener('click', hideBurgerMenu) ;
-exitCarpet.addEventListener("click", hideBurgerMenu);
-
+exitCarpet.addEventListener("click", function(){
+    if (burgerMenu.style.right == "-10px") hideBurgerMenu();
+    if (popUp.style.top == "5%") hidePopUp();
+});
+login.addEventListener("click", showPopUp);
 
 for (let i = 0; i < menuLink.length; i++) {
     menuLink[i].addEventListener("click", hideBurgerMenu);
