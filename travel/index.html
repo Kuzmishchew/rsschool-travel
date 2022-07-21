@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/desktop-md.css">
     <link rel="stylesheet" href="./style/mobile.css"> 
-    <link rel="stylesheet" href="./style/burger-menu.css">    
+    <link rel="stylesheet" href="./style/burger-menu.css"> 
+    <link rel="stylesheet" href="./style/popup.css">   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
@@ -15,6 +16,25 @@
 </head>
 <body>
     <div class="exit-carpet" id="exit-carpet"></div>
+    <div class="popup">
+        <h3 class="popup__heading">Log in to your account</h3>
+        <button class="facebook-sign popup__button"><img class="button-ico" src="./img/popup/fb.svg"><span>Sign In with Facebook</span></button>
+        <button class="google-sign popup__button"><img class="button-ico" src="./img/popup/google.svg"><span>Sign In with Google</span></button>
+        <div class="popup-line">
+            <hr class="or-line">
+            <span>or</span>
+            <hr class="or-line">
+        </div>
+        <form action="#" class="popup__form">
+            E-mail<br>
+            <input class="popup__login" type="text">
+            Password<br>
+            <input class="popup__password" type="password">
+            <input class="popup__sign popup__button" type="submit" value="Sign In">
+            <a href="#">Forgot Your Password?</a>
+        </form>
+        <span>Don't have an accout?<a class="Register" href="#">Register</a></span>
+    </div>
     <div class="burger-menu" id="burger-menu">
         <div class="burger-menu__exit" id="burger-menu__exit"></div>
         <nav class="burger-menu__nav">
