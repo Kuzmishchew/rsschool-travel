@@ -20,6 +20,7 @@ const exitCarpet = document.getElementById("exit-carpet");
 
 const popUp = document.getElementById("popup");
 const login = document.getElementById("login");
+const account = document.getElementById("account");
 
 function showBurgerMenu() {    
     burgerMenu.style.right = "-10px";
@@ -35,20 +36,28 @@ function showPopUp() {
     exitCarpet.style.background = "rgba(0, 0, 0, 0.5)";
 }
 function hidePopUp() {
-    popUp.style.top = "-670px";
+    popUp.style.top = "-700px";
     exitCarpet.style.display = "none";
     exitCarpet.style.background = "none";
 }
 
 
 burgerButton.addEventListener('click', showBurgerMenu);
+
 burgerMenuExit.addEventListener('click', hideBurgerMenu) ;
+
 exitCarpet.addEventListener("click", function(){
     if (burgerMenu.style.right == "-10px") hideBurgerMenu();
     if (popUp.style.top == "5%") hidePopUp();
 });
+
 login.addEventListener("click", showPopUp);
+account.addEventListener("click", showPopUp);
 
 for (let i = 0; i < menuLink.length; i++) {
+   if (i != 4) {
     menuLink[i].addEventListener("click", hideBurgerMenu);
+   } else {
+    menuLink[i].addEventListener("click", () => {burgerMenu.style.right = "-175px"});
+   } 
 }

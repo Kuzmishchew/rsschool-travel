@@ -1,7 +1,7 @@
 .popup {
    position: fixed;
    z-index: 2;
-   top: -670px;
+   top: -700px;
    left: calc(50% - 325px);
 
    display: flex;
