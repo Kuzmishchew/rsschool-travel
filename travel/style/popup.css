@@ -49,6 +49,7 @@
     margin-right: 15px;
 }
 .popup__heading {
+    margin-bottom: 30px;
     font-family: 'Aleo', serif;
     font-size: 32px;
     font-weight: 700;
@@ -89,6 +90,7 @@
 .popup__form {
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 
     font-family: 'Aleo', serif;
     color: #0D606F;
@@ -118,6 +120,7 @@
 }
 
 .sign-in__button {
+    margin-top: 5px;
     margin-bottom: 10px;
 
     background-color: #0D606F;
@@ -136,7 +139,7 @@
 }
 
 .registration {
-    margin-top: 25px;
+    margin-top: 15px;
 
     font-family: 'Aleo', serif;
     font-size: 15px;
@@ -153,6 +156,11 @@
         left: calc(15%);
         width: 70%;
         height: 90%;
+    }
+    @media screen and (min-height: 800px){
+        .popup {
+            height: 80%;
+        } 
     }
     .popup__button {
         width: 70%;
@@ -174,9 +182,36 @@
         width: 70%;
     }
     @media screen and (max-width: 600px) {
+        .popup {
+            width: 90%;
+            left: calc(5%);
+        }
+        .popup__heading {
+            font-size: 24px;
+        }
         .popup__button {
             font-size: 14px;
             font-weight: 500;
         } 
+        .popup-line {
+            display: flex;
+            justify-content: center;
+        }
+        .or-line {
+            display: none;
+        }
+        .popup__form{
+            width: 90%;
+        }
     }
+    @media screen and (max-width: 390px) {
+        .popup {
+            width: 90%;
+            top: -700px;
+        }
+        .popup__button {
+            height: 40px;
+        }
+    }
+
 }
