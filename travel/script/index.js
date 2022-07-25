@@ -21,6 +21,11 @@ const exitCarpet = document.getElementById("exit-carpet");
 const popUp = document.getElementById("popup");
 const login = document.getElementById("login");
 const account = document.getElementById("account");
+const form = document.getElementById("formData");
+const signIn = document.getElementById("signIn");
+const facebook = document.getElementById("facebookSignIn");
+const google = document.getElementById("googleSignIn");
+const registration = document.getElementById("registration");
 
 function showBurgerMenu() {    
     burgerMenu.style.right = "-10px";
@@ -53,6 +58,43 @@ exitCarpet.addEventListener("click", function(){
 
 login.addEventListener("click", showPopUp);
 account.addEventListener("click", showPopUp);
+signIn.addEventListener("click", () => {
+    const formData = new FormData(form);
+    const login = formData.get("login");
+    const password = formData.get("password");
+    hidePopUp();
+    alert("Your login: " + login + "\n" + "Your password: " + password);
+});
+google.addEventListener("click", () => {
+    hidePopUp();
+    alert("Authorization with Google account.");
+});
+facebook.addEventListener("click", () => {
+    hidePopUp();
+    alert("Authorization with Facebook account.");
+});
+registration.addEventListener("click", () => {
+    popUp.style.height = "436px";
+    facebook.style.display = "none";
+    google.style.display = "none";
+    document.getElementsByClassName("popup-line")[0].style.display = "none";
+    document.getElementsByClassName("pass-reload")[0].style.display = "none";
+    document.getElementsByClassName("popup__heading")[0].innerHTML = "Create account";
+    document.getElementsByClassName("sign-in__button")[0].innerHTML = "Sign Up";
+    document.getElementsByClassName("registration")[0].style.display = "none";
+    document.getElementsByClassName("autorization")[0].style.display = "block";
+});
+document.getElementById("log_in").addEventListener("click", () => {
+    popUp.style.height = "660px";
+    facebook.style.display = "block";
+    google.style.display = "block";
+    document.getElementsByClassName("popup-line")[0].style.display = "flex";
+    document.getElementsByClassName("pass-reload")[0].style.display = "block";
+    document.getElementsByClassName("popup__heading")[0].innerHTML = "Log in to your account";
+    document.getElementsByClassName("sign-in__button")[0].innerHTML = "Sign In";
+    document.getElementsByClassName("registration")[0].style.display = "block";
+    document.getElementsByClassName("autorization")[0].style.display = "none";
+})
 
 for (let i = 0; i < menuLink.length; i++) {
    if (i != 4) {
