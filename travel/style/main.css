@@ -331,14 +331,24 @@ a {
     margin: 0;
 }
 .slides-item {
+    position: relative;
     box-sizing: border-box;
     width: 800px;
     height: 800px;
+
+    transition: left 1s;
+    cursor: pointer;
 }
 .first-slide,
 .second-slide {
     margin-right: 60px; 
 } 
+.first-slide,
+.second-slide,
+.third-slide {
+    left: 0;
+    transition: left 1s; 
+}
 
 .slides-item__img {
     width: 800px;
@@ -372,7 +382,6 @@ a {
 }
 .slide-checker:hover{
     cursor: pointer;
-    background-color: rgba(242, 120, 92);
 }
 /* 
 Блок с историями. 
