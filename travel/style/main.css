@@ -321,23 +321,32 @@ a {
     display: none;
 }
 .slides-wrapper {
-    width: 2520px;
+    position: relative;
+    left: -37.5%;
+
+    box-sizing: border-box;
+    width: 175%;
     display: flex;
-    justify-content: space-between;
-      
-    margin-left: -540px;
+    justify-content: center;
+    margin: 0;
 }
 .slides-item {
     box-sizing: border-box;
     width: 800px;
     height: 800px;
 }
+.first-slide,
+.second-slide {
+    margin-right: 60px; 
+} 
+
 .slides-item__img {
     width: 800px;
     height: 800px;
 
     border-radius: 16px;
 }
+
 .slides-item__country {
     margin-top: -88px;
     margin-left: 16px;

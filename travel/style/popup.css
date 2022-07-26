@@ -217,6 +217,12 @@
         }
         .popup__button {
             height: 40px;
+            line-height: 40px;
+            padding: 0;
+        }
+        .button-ico {
+            width: 18px;
+            height: 18px;
         }
     }
 
