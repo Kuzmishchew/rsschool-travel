@@ -161,14 +161,23 @@
         width: 360px;
         height: 210px;
         margin-top: 20px;
-
-        background-image: url("../img/destinations/spain-mb.jpg");
         border-radius: 16px;
 
         font-family: 'Red Hat Text', sans-serif;
         font-size: 20px;
         font-weight: 500;
-        color: #FFFFFF;        
+        color: #FFFFFF; 
+        
+        transition: background-image 1s;
+    }
+    .first-back {     
+        background-image: url("../img/destinations/spain-mb.jpg");
+    }
+    .second-back {     
+        background-image: url("../img/destinations/japan-mb.jpg");
+    }
+    .third-back {     
+        background-image: url("../img/destinations/usa-mb.jpg");
     }
     .slider-mb__name {
        margin: 8px 0 0 15px;
@@ -181,12 +190,13 @@
     .radio-block {
         width: 36px;
     }
-    .slide-checker {
+    .slide-checker-mb {
         width: 8px;
         height: 8px;
         margin-top: 53px;
 
         border-radius: 4px;
+        background-color: rgba(242, 120, 92, 0.5);
     }
     .destinations__button,
     .stories__button {
