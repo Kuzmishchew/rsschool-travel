@@ -80,19 +80,22 @@ function changeRight() {
         slider.classList.remove("first-back");
         slider.classList.add("second-back");
         sliderText.innerHTML = "JAPAN";
-        radioMb[1].backgroundColor = "rgba(242, 120, 92)";
+        radioMb[0].classList.remove("slide-checker_active");
+        radioMb[1].classList.add("slide-checker_active");
     }
     if (count == 2) {
         slider.classList.remove("second-back");
         slider.classList.add("third-back");
         sliderText.innerHTML = "USA";
-        radioMb[2].backgroundColor = "#F2785C";
+        radioMb[1].classList.remove("slide-checker_active");
+        radioMb[2].classList.add("slide-checker_active");
     }   
     if (count == 3) {
         slider.classList.remove("third-back");
         slider.classList.add("first-back");
         sliderText.innerHTML = "SPAIN";
-        radioMb[2].backgroundColor = "#F2785C";
+        radioMb[2].classList.remove("slide-checker_active");
+        radioMb[0].classList.add("slide-checker_active");
         count = 0;
     }   
     count++;
@@ -102,20 +105,23 @@ function changeLeft() {
         slider.classList.remove("first-back");
         slider.classList.add("third-back");
         sliderText.innerHTML = "USA";
-        radioMb[1].backgroundColor = "#F2785C";
+        radioMb[0].classList.remove("slide-checker_active");
+        radioMb[2].classList.add("slide-checker_active");
         count = 4;
     }
     if (count == 2) {
         slider.classList.remove("second-back");
         slider.classList.add("first-back");
         sliderText.innerHTML = "SPAIN";
-        radioMb[0].backgroundColor = "#F2785C";
+        radioMb[1].classList.remove("slide-checker_active");
+        radioMb[0].classList.add("slide-checker_active");
     }
     if (count == 3) {
         slider.classList.remove("third-back");
         slider.classList.add("second-back");
         sliderText.innerHTML = "JAPAN";
-        radioMb[1].backgroundColor = "#F2785C";
+        radioMb[2].classList.remove("slide-checker_active");
+        radioMb[1].classList.add("slide-checker_active");
     } 
     count--;
 }
@@ -124,4 +130,55 @@ right.addEventListener("click", () => {
 })
 left.addEventListener("click", () => {
     changeLeft();  
+})
+radioMb[0].addEventListener("click", () => {
+    if (count == 2) {
+        slider.classList.remove("second-back");
+        slider.classList.add("first-back");
+        sliderText.innerHTML = "SPAIN";
+        radioMb[1].classList.remove("slide-checker_active");
+        radioMb[0].classList.add("slide-checker_active");
+    }
+    if (count == 3) {
+        slider.classList.remove("third-back");
+        slider.classList.add("first-back");
+        sliderText.innerHTML = "SPAIN";
+        radioMb[2].classList.remove("slide-checker_active");
+        radioMb[0].classList.add("slide-checker_active");
+    } 
+    count = 1;
+})
+radioMb[1].addEventListener("click", () => {
+    if (count == 1) {
+        slider.classList.remove("first-back");
+        slider.classList.add("second-back");
+        sliderText.innerHTML = "JAPAN";
+        radioMb[0].classList.remove("slide-checker_active");
+        radioMb[1].classList.add("slide-checker_active");
+    }
+    if (count == 3) {
+        slider.classList.remove("third-back");
+        slider.classList.add("second-back");
+        sliderText.innerHTML = "JAPAN";
+        radioMb[2].classList.remove("slide-checker_active");
+        radioMb[1].classList.add("slide-checker_active");
+    } 
+    count = 2;
+})
+radioMb[2].addEventListener("click", () => {
+    if (count == 1) {
+        slider.classList.remove("first-back");
+        slider.classList.add("third-back");
+        sliderText.innerHTML = "USA";
+        radioMb[0].classList.remove("slide-checker_active");
+        radioMb[2].classList.add("slide-checker_active");
+    }
+    if (count == 2) {
+        slider.classList.remove("second-back");
+        slider.classList.add("third-back");
+        sliderText.innerHTML = "USA";
+        radioMb[1].classList.remove("slide-checker_active");
+        radioMb[2].classList.add("slide-checker_active");
+    } 
+    count = 3;
 })
