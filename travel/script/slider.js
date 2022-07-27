@@ -74,7 +74,6 @@ thirdSlide.addEventListener("click", () => {
 });
 
 // Mobile
-radioMb[0].backgroundColor = "rgba(242, 120, 92)";
 function changeRight() {
     if (count == 1) {
         slider.classList.remove("first-back");
