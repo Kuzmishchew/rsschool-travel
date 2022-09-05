@@ -1,2 +1,3 @@
-# kuzmishchew-JSFEPRESCHOOL2022Q2
-Private repository for @kuzmishchew
+# Travel - project for Rolling Scopes FE Course Stage0.
+
+Project page: 
